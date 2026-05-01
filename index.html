@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一個網頁</title>
+    <style>
+       body {
+            /* 設定背景圖片 */
+            background-image: url('bg.jpg'); 
+            
+            /* 讓背景圖片鋪滿全螢幕，不隨捲軸滾動 */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* 文字樣式調整 */
+            font-family: sans-serif;
+            text-align: center;
+            color: white; /* 因為背景較深，把文字改為白色會更清楚 */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        h1 {
+            background-color: rgba(0, 0, 0, 0.5); /* 幫文字加一點半透明黑底，增加閱讀性 */
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>哈囉，世界！</h1>
+    <p>這是我親手寫的網頁。</p>
+    <button onclick="alert('你點了我！')">點擊這裡</button>
+</body>
+</html>
