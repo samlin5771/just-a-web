@@ -38,4 +38,13 @@
     <p>As you can see I wrote it.</p>
     <button onclick="alert('dumb ass will touch me.')">click me!</button>
 </body>
+<!-- 在 HTML 中加入按鈕 -->
+    <button id="surpriseBtn">點擊查看神秘驚喜！</button>
+        <script>
+        const btn = document.querySelector('#surpriseBtn');
+          btn.addEventListener('click', () => {
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+          });
+        </script>
+
 </html>
